@@ -1,14 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../../styles/animations.scss';
+@import '../../styles/styles.scss';
 
-$primary: #000000;
+.info-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    margin: auto;
+    margin-top: 130px;
+    padding-top: 60px;
+    border-radius: 20px;
+    opacity: 0%;
+    animation: opacity 4s 3200ms forwards;
+    z-index: 10;
+    box-shadow: 0px 5px 50px 0px $primary;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    h1 {
+        font-size: 28px;
+        color: $primary;
+        text-align: center;
+        margin-top: 0px; 
+    }
+
+    h2 {
+        color: $primary;
+        font-weight: 300;
+    }
 }
 
-body{
-    background-color: $primary;
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -85px;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    img {
+        display: flex;
+        margin-top: 40px;
+        margin-right: 6px;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        scale: 130%;  
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
 }
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 700px;
+    align-items: center;
+    text-align: justify;
+    background-color: $tertiary;
+    margin: auto;
+    margin-top: -2px;
+    margin-bottom: 20px;
+    padding: 40px;
+    opacity: 0%;
+    animation: opacity 4s 6500ms forwards;
+
+    h2 {
+        color: $primary;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    p {
+        color: $primary;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        line-height: 2.0;
+    }
+}
+
