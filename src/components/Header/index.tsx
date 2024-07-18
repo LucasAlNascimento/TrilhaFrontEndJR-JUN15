@@ -1,10 +1,15 @@
 import './styles.scss'
 
+import { FaReact } from "react-icons/fa";
+
 export default function Header() {
-    return(
-        <div className="header">
-            <p>Lucas Alves</p>
-            <p>Software Developer</p>
-        </div>
+    return (
+        <header className='header'>
+            <div className='info'>
+                <p>Lucas Alves</p>
+                <p>Front-End Developer</p>
+            </div>
+            <i className='icons'><FaReact /></i>
+        </header>
     )
 }

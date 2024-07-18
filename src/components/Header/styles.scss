@@ -4,36 +4,40 @@ $tertiary: #ffffff;
 
 .header {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #e53939;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.info {
+    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 90px;
-    background-color: $secondary;
     gap: 5px;
-    border-radius: 0px 0px 20px 20px;
+
     text-align: center;
     overflow: hidden;
 
     p:first-of-type {
         font-size: large;
         font-weight: 600;
-        animation-duration: 3s;
-        animation-name: slidein-left;
-        animation-fill-mode: forwards;
+        animation: slidein-left 4s forwards;
     }
 
     p:last-of-type {
         font-weight: 300;
-        animation-duration: 3s;
-        animation-name: slidein-right;
-        animation-fill-mode: forwards;
+        animation: slidein-right 5s forwards;
     }
 
     @keyframes slidein-left {
         from {
             color: $secondary;
-            transform: translateX(-1000%);
+            transform: translateX(-400%);
         }
         to {
             color: $primary;
@@ -44,11 +48,40 @@ $tertiary: #ffffff;
     @keyframes slidein-right {
         from {
             color: $secondary;
-            transform: translateX(1000%);
+            transform: translateX(400%);
         }
         to {
             color: $primary;
             transform: translateX(0);
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    font-size: 40px;
+    color: $primary;
+    opacity: 0%;
+    animation: opacity 6s 3200ms forwards, spinning 6s linear infinite;
+
+    @keyframes opacity {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes spinning {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
         }
     }
 }
