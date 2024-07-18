@@ -1,12 +1,11 @@
-$primary: #000000;
-$secondary: #e53939;
-$tertiary: #ffffff;
+@import '../../styles/animations.scss';
+@import '../../styles/styles.scss';
 
 .header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: #e53939;
+    background-color: $secondary;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -33,28 +32,6 @@ $tertiary: #ffffff;
         font-weight: 300;
         animation: slidein-right 5s forwards;
     }
-
-    @keyframes slidein-left {
-        from {
-            color: $secondary;
-            transform: translateX(-400%);
-        }
-        to {
-            color: $primary;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes slidein-right {
-        from {
-            color: $secondary;
-            transform: translateX(400%);
-        }
-        to {
-            color: $primary;
-            transform: translateX(0);
-        }
-    }
 }
 
 .icons {
@@ -66,23 +43,5 @@ $tertiary: #ffffff;
     color: $primary;
     opacity: 0%;
     animation: opacity 6s 3200ms forwards, spinning 6s linear infinite;
-
-    @keyframes opacity {
-        from {
-            opacity: 0%;
-        }
-        to {
-            opacity: 100%;
-        }
-    }
-
-    @keyframes spinning {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
 }
 

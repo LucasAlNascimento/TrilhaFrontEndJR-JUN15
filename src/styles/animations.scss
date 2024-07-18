@@ -1,0 +1,41 @@
+@import 'styles.scss';
+
+@keyframes slidein-left {
+    from {
+        color: $secondary;
+        transform: translateX(-400%);
+    }
+    to {
+        color: $primary;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidein-right {
+    from {
+        color: $secondary;
+        transform: translateX(400%);
+    }
+    to {
+        color: $primary;
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
