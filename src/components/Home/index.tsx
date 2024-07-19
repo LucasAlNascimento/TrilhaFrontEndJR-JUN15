@@ -9,11 +9,25 @@ export default function Home() {
     useEffect(() => {
         const aboutContainer = document.querySelector('.about-container');
         const logoCodigoCerto = document.querySelector('.logo-codigocerto');
+        const hiddenElements = document.querySelectorAll('p, .logo-unip, .logo-codigocerto, .card, .logo-container, .about-container h2');
+
+        hiddenElements.forEach(element => {
+            element.classList.add('hidden');
+        });
 
         function scroll() {
+            const windowHeight = window.innerHeight;
+
+            hiddenElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    element.classList.add('visible');
+                    element.classList.remove('hidden');
+                }
+            });
+            
             if (logoCodigoCerto) {
                 const imagePosition = logoCodigoCerto?.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
 
                 if (imagePosition <= windowHeight) {
                     aboutContainer?.classList.add('scrolled');
@@ -24,6 +38,7 @@ export default function Home() {
         }
 
         window.addEventListener('scroll', scroll);
+        scroll();
 
         return () => {
             window.removeEventListener('scroll', scroll);
@@ -75,11 +90,8 @@ export default function Home() {
                 <img src='/codigocertologo.webp' alt='Logo Código Certo' className='logo-codigocerto' />
 
                 <p>O trabalho que a <b>Código Certo</b> faz ajudando desenvolvedores a terem experiência prática e ingressar no mercado do desenvolvimento é incrível e <b>vai de encontro com meus princípios</b>. Me incluo nessa experiência pois necessito da prática, já que não segui minha área de formação mesmo após o estágio.</p>
-
-
             </div>
             <Footer />
         </main>
     )
-
 }

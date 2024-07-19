@@ -45,7 +45,7 @@
     border-radius: 100%;
     overflow: hidden;
     transition: transform 0.3s ease;
-    
+
     img {
         display: flex;
         margin-top: 40px;
@@ -54,9 +54,9 @@
         height: 150px;
         align-items: center;
         justify-content: center;
-        scale: 130%;  
+        scale: 130%;
     }
-    
+
     &:hover {
         transform: scale(1.1);
     }
@@ -125,7 +125,7 @@
     align-items: center;
     gap: 20px;
     transition: transform 0.3s ease;
-    
+
     img {
         width: 70px;
         height: auto;
@@ -152,3 +152,15 @@
     height: auto;
 }
 
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-out;
+}
