@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Trilha Front-End Jr #
+## 🙋‍♂️ Apresentação (Profile) 🙋‍♂️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Acesso para o App em Produção | Vercel
+https://lucasalves-trilhafrontendjr.vercel.app/
 
-Currently, two official plugins are available:
+### Languages
+- JavaScript
+- TypeScript
+- Sass
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frameworks
+- React
 
-## Expanding the ESLint configuration
+### Libraries
+- React Icons
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Workstation Tools
+- Microsoft Visual Studio Code
 
-- Configure the top-level `parserOptions` property like this:
+### Operating Systems
+- Windows
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Mobile Images
+<img src="https://github.com/user-attachments/assets/ddf134a5-8282-4b93-acec-51c29f2d3d50" width="50%" height="100%"/>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Desktop Images
+
+<img src="https://github.com/user-attachments/assets/fc274441-46f2-46c6-9c7f-5d9b17a308cd" width="100%" height="100%"/>
