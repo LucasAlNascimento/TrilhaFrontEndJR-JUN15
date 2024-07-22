@@ -1,29 +1,28 @@
-# Trilha Front-End Jr #
-## 🙋‍♂️ Apresentação (Profile) 🙋‍♂️
+# Trilha Front-End Júnior #
+## 🙋‍♂️ Apresentação do Perfil (My Profile) 🙋‍♂️
 
 ### Acesso para o App em Produção | Vercel
 https://lucasalves-trilhafrontendjr.vercel.app/
 
-### Languages
-- JavaScript
+### Linguagens
 - TypeScript
 - Sass
 
 ### Frameworks
 - React
 
-### Libraries
+### Bibliotecas
 - React Icons
 
-### Workstation Tools
+### Ferramentas / Estação de Trabalho
 - Microsoft Visual Studio Code
 
-### Operating Systems
+### Sistemas Operacionais
 - Windows
 
-### Mobile Images
+### Imagens em Ambiente Mobile
 <img src="https://github.com/user-attachments/assets/ddf134a5-8282-4b93-acec-51c29f2d3d50" width="50%" height="100%"/>
 
-### Desktop Images
+### Imagens em Ambiente Desktop
 
 <img src="https://github.com/user-attachments/assets/fc274441-46f2-46c6-9c7f-5d9b17a308cd" width="100%" height="100%"/>
